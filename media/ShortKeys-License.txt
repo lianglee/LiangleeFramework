@@ -1,0 +1,3 @@
+Copyright (c) 2012  Liang Lee (Sunny) Shortcuts keys
+
+Use of this keys under Gpl vrsion 2
