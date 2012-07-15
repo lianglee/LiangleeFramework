@@ -23,7 +23,7 @@ $english = array(
 	'lianglee:pdn' => "PageDown",
 	'lianglee:end' => "End",
 	'lianglee:admin' => "Administrator",
-	'lianglee:err' => "An error as occur",
+	'lianglee:err' => "An error has occur",
 	'lianglee:reset'=> "Reset",
 	'lianglee:stop'=> "Stop",
 	'lianglee:start'=> "Start",
@@ -38,6 +38,7 @@ $english = array(
 	'lianglee:cant:load:inc' => "LiangLee having problem to include a file please see documentation.",
     'lianglee:cant:load:img' => "LiangLee having problem to load a css please see documentation.",
 	'lianglee:class:bad' => "Requested Class not found",
+	'lianglee:requested:file:not:found' => "Requested File not found",
 
 	
 /*
@@ -49,6 +50,8 @@ $english = array(
 	'lianglee:cant:load:js:code' => "Error: #JS3, Please inform site Administrator.",
 	'lianglee:cant:load:css:code' => "Error: #CS2, Please inform site Administrator.",
 	'lianglee:class:bad:code' =>  "Error: #ClAS6, Please inform site Administrator.",
+	'lianglee:requested:file:not:found:code' => "Error: #File57, Please inform site Administrator",
+
 
 /*
  * Copyrights

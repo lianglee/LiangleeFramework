@@ -13,7 +13,7 @@
 class LiangLeec {
 
 /**
- * Register LiangLeec Functiom
+ * Register LiangLeec Function
  **/
 function LiangLeec($u = false) {
 		$this->conn = curl_init();
@@ -76,7 +76,7 @@ function LiangLeec($u = false) {
 		}
 	}
 /**
- * Fetch video url.
+ * Fetch url.
  **/
 	function liangleecfetch($url) {
 		return $this->sendreq('GET', $url, 'NULL');
