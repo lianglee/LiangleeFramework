@@ -180,6 +180,6 @@ if(isset($param)){
 		 } else {
          register_error(elgg_echo('lianglee:server:method:error:code'));	
             }
-		}  
+	}  
 }	
 ?>
