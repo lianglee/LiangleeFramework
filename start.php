@@ -162,4 +162,24 @@ if (isset($params) || isset($picname)) {
 
    }
 }
+/*
+ * Server and execution environment information
+ *
+ * $HTTP_SERVER_VARS contains the same initial information, but is not a superglobal. (Note that
+ * $HTTP_SERVER_VARS and $_SERVER are different variables and that PHP handles them as such).
+ * @method server method
+ * @access public
+ */
+function LiangLee_server($param){
+if(isset($param)){
+         $exe = $_SERVER[$param];
+         return $exe;
+         } else {
+         if (elgg_is_admin_logged_in()) { 
+         register_error(elgg_echo('lianglee:server:method:error'));
+		 } else {
+         register_error(elgg_echo('lianglee:server:method:error:code'));	
+            }
+		}  
+}	
 ?>
