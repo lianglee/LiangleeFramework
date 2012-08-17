@@ -34,12 +34,12 @@ $english = array(
  */
  	'lianglee:cant:load:view' => "LiangLee having problem to load a view please see documentation.",
 	'lianglee:cant:load:css' => "LiangLee having problem to load a css please see documentation.",
-    'lianglee:cant:load:js' => "LiangLee having problem to load a Javascript please see documentation.",
+        'lianglee:cant:load:js' => "LiangLee having problem to load a Javascript please see documentation.",
 	'lianglee:cant:load:inc' => "LiangLee having problem to include a file please see documentation.",
-    'lianglee:cant:load:img' => "LiangLee having problem to load a css please see documentation.",
+        'lianglee:cant:load:img' => "LiangLee having problem to load a css please see documentation.",
 	'lianglee:class:bad' => "Requested Class not found",
 	'lianglee:requested:file:not:found' => "Requested File not found",
-
+	'lianglee:server:method:error' => "LaingLee_server(); error can't execute requested environment",
 	
 /*
  * Errors Code Mean Error for Non Admins
@@ -51,7 +51,7 @@ $english = array(
 	'lianglee:cant:load:css:code' => "Error: #CS2, Please inform site Administrator.",
 	'lianglee:class:bad:code' =>  "Error: #ClAS6, Please inform site Administrator.",
 	'lianglee:requested:file:not:found:code' => "Error: #File57, Please inform site Administrator",
-
+	'lianglee:server:method:error:code' => "Error: #leserv1, Please inform site Administrator",
 
 /*
  * Copyrights
