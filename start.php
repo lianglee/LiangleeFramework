@@ -112,17 +112,18 @@ if(is_file(elgg_get_plugins_path().$plugin.'/classes/'.$params.'.php')){
  * @jsname Name of specfic js file
  * @access public
  */
-function LiangLee_inc_js($params,$jsname) {
+ffunction LiangLee_inc_js($params,$jsname) {
 if (isset($params) || isset($jsname)) {
-      $path = "mod/".$params."/vendors/";
-      echo "<script type=\"text/javascript\" src=\"".elgg_get_site_url().$path.$jsname."\"></script>\n";
-	  } else {
+         $path = "mod/".$params."/vendors/";
+         $javas = "<script type=\"text/javascript\" src=\"".elgg_get_site_url().$path.$jsname."\"></script>\n";
+	 return $javas;
+	 } else {
 	 if (elgg_is_admin_logged_in()) {
-     register_error(elgg_echo('lianglee:cant:load:js'));
-     } else {
+         register_error(elgg_echo('lianglee:cant:load:js'));
+         } else {
         register_error(elgg_echo('lianglee:cant:load:js:code'));	
           }
-	  }
+       }
 } 
 /*
  * Adding css to pages 
@@ -132,16 +133,17 @@ if (isset($params) || isset($jsname)) {
  */
 function LiangLee_inc_css($params ,$cssname) {
 if (isset($params) || isset($cssname)) {
-    $path = "mod/".$params."/";
-    echo "<link rel=\"stylesheet\" href=\"".elgg_get_site_url().$path.$cssname."\" type=\"text/css\" />\n";
-	 } else {
-	 if (elgg_is_admin_logged_in()) {
-     register_error(elgg_echo('lianglee:cant:load:css'));
-     } else {
+        $path = "mod/".$params."/";
+        $style ="<link rel=\"stylesheet\" href=\"".elgg_get_site_url().$path.$cssname."\" type=\"text/css\" />\n";
+        return $style;
+	} else {
+        if (elgg_is_admin_logged_in()) {
+        register_error(elgg_echo('lianglee:cant:load:css'));
+        } else {
         register_error(elgg_echo('lianglee:cant:load:css:code'));	
         }
 
-   }
+    }
 }
 /*
  * Adding img in html
@@ -152,9 +154,10 @@ if (isset($params) || isset($cssname)) {
 function LiangLee_img($params,$picname){
 if (isset($params) || isset($picname)) {
         $path = "mod/".$params."/media/";
-        echo "<img src=\"".elgg_get_site_url().$path.$picname."\">\n";
-		} else {
-	    if (elgg_is_admin_logged_in()) {
+	$image = "<img src=\"".elgg_get_site_url().$path.$picname."\">\n";
+        return $image;
+	} else {
+	if (elgg_is_admin_logged_in()) {
         register_error(elgg_echo('lianglee:cant:load:img'));
         } else {
         register_error(elgg_echo('lianglee:cant:load:img:code'));	
