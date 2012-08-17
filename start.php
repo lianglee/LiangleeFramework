@@ -180,7 +180,7 @@ if(isset($param)){
          } else {
          if (elgg_is_admin_logged_in()) { 
          register_error(elgg_echo('lianglee:server:method:error'));
-		 } else {
+	 } else {
          register_error(elgg_echo('lianglee:server:method:error:code'));	
             }
 	}  
