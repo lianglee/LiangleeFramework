@@ -1,7 +1,6 @@
 <?php
-/* LiangLeeUdownload
+/* LiangLeeFramework
  * @package Liang Lee Framework
- * @subpackage Liang Lee Videos Download
  * @author Liang Lee
  * @copyright LIANG LEE 2012
  * @File LiangLee.class.framework.curl.php
