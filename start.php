@@ -23,7 +23,13 @@ function LiangleeFramework_init() {
  */
 elgg_extend_view('css/elgg', 'LiangleeFramework/css');
 
+elgg_register_library('elgg:LiangleeFramework', LiangLee_plugin_path('LiangleeFramework','lib')."LiangleeFramework.php");
+
+elgg_load_library('elgg:LiangleeFramework');
+
+LiangleeFramework_setup();
 }
+
 /*
  * Inlude a view file
  *
