@@ -20,18 +20,22 @@ define('lee_loggedin_admin', elgg_is_admin_logged_in());
 define('lee_loggedin_user', elgg_is_logged_in());
 define('lee_loggedin_user_guid', elgg_get_logged_in_user_guid());
 
-define('lee_pown_entity', elgg_get_page_owner_entity());
-define('lee_pown_entity_guid', elgg_get_page_owner_entity()->guid);
-define('lee_pown_entity_name', elgg_get_page_owner_entity()->name);
-define('lee_pown_entity_username', elgg_get_page_owner_entity()->username);
-
-
+/**
+ * Remove a word from a string
+ *
+ * @access system
+ */
 function lee_framework_remove($data = '', $remove = ''){
 if(!empty($data) && !empty($remove)){
 $result =  str_replace($remove,'',$data);
 return $result;
   }
  } 
+/**
+ * Remove a word from a string
+ *
+ * @access system
+ */ 
 function lee_framework_encode_64($data = ''){ 
 if(!empty($data)){
 $data = base64_encode($data);
