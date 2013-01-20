@@ -7,6 +7,7 @@
  * @copyright All right reserved Liang Lee 2012.
  * @File lianglee.framework.connection.php
  */
+defined('_LEE_EXEC') or die ('Restricted access');  
  
 /*
  * Get a connection type hype text transfer protocol or hype text transfer protocol secure
