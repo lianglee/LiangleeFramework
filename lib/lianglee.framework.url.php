@@ -7,6 +7,7 @@
  * @copyright All right reserved Liang Lee 2012.
  * @File lianglee.framework.url.php
  */
+defined('_LEE_EXEC') or die ('Restricted access');  
  
 /*
  * LiangLeeFramework Url , return true of url contain a sting
@@ -23,5 +24,5 @@ if(isset($params) && !empty($params)){
   $error = 'params not be empty';
   return false;
    }
-
+  }
 } 
