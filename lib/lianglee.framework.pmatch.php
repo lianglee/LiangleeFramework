@@ -7,7 +7,8 @@
  * @copyright All right reserved Liang Lee 2012.
  * @File lianglee.framework.pmatch.php
  */
- 
+ defined('_LEE_EXEC') or die ('Restricted access');  
+
 /*
  * Liang Lee Framework Pregmatch Lib
  *
@@ -16,7 +17,7 @@
  */
 function Lianglee_pmatch_reg($params = array()){
   if(isset($params['regex'])){
-     if(!empty($params['regex'] && !empty($params['string']))){
+     if(!empty($params['regex']) && !empty($params['string'])){
         if(preg_match ($params['regex'], $params['string'], $matches, PREG_OFFSET_CAPTURE)){
          return true;
         }
