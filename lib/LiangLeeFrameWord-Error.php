@@ -7,6 +7,8 @@
  * @copyright All right reserved Liang Lee 2012.
  * @File LiangLeeFramework.php
  */
+ defined('_LEE_EXEC') or die ('Restricted access');   
+
 if (elgg_is_active_plugin('LiangleeFramework')) {
 if(count($_SESSION['msg']['error'])>0)	
 {					
