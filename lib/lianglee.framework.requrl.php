@@ -7,6 +7,7 @@
  * @copyright All right reserved Liang Lee 2012.
  * @File lianglee.framework.requrl.php
  */
+defined('_LEE_EXEC') or die ('Restricted access');  
 
 /*
  * Get a current url
