@@ -11,6 +11,29 @@
 defined('_LEE_EXEC') or die ('Restricted access');  
 
 /**
+ * Remove a word from a string
+ *
+ * @access system
+ */ 
+function lee_framework_encode_64($data = ''){ 
+if(!empty($data)){
+$data = base64_encode($data);
+return lee_framework_remove($data, '=');
+ }
+} 
+/**
+ * Make a array from input
+ *
+ * @access system
+ */
+
+function lee_framework_get_options($settings){
+if (is_string($settings)) {$options = explode(",", $settings);$options = array_map('trim', $options);
+$options = array_filter($options, 'is_not_null');
+  } return $options;	 
+}	
+
+/**
 * Make a compactible with LiangLeePhpIde , used, array()
 */ 
 function lianglee_set_usersettings($params = array()){
