@@ -14,8 +14,6 @@ if(count($_SESSION['msg']['error'])>0)
 {					
 	foreach($_SESSION['msg']['error'] as $error)
 		echo "<p style='font-weight: bold;'>$error</p>";
-	echo '</div>';
 }
 unset($_SESSION['msg']['error']);
 }
-?>
