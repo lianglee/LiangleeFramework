@@ -1,10 +1,10 @@
-LiangLeeFramework 1.1.5
+LiangLeeFramework 1.1.6
 
-(January 19, 2013 from https://github.com/lianglee/LiangLeeFramework/tree/1.1.5)
+(March, 25  from https://github.com/lianglee/LiangLeeFramework/tree/master)
 
-BugsFixes:
+Application Changes:
 
-* Fix bug that cause a error in elgg 1.8.12.
+* Added more comments along each line in core lib.
 
 
 
