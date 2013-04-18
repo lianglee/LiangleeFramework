@@ -17,7 +17,7 @@ defined('_LEE_EXEC') or die ('Restricted access');
 function Lianglee_requested_url_full($params){
    if(isset($params)){
        if($params == true){
-        $url = Lianglee_get_connection().LiangLee_server('SERVER_NAME').LiangLee_server('REQUEST_URI');
+        $url = Lianglee_get_connection().'://'.LiangLee_server('SERVER_NAME').LiangLee_server('REQUEST_URI');
         return $url;
        }
 	}   
