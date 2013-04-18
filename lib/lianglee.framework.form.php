@@ -10,6 +10,18 @@
  
 defined('_LEE_EXEC') or die ('Restricted access');  
 
+/***
+ * Remove a word from a string
+ *
+ * @access system
+ */
+function lee_framework_remove($data = '', $remove = ''){
+if(!empty($data) && !empty($remove)){
+$result =  str_replace($remove,'',$data);
+return $result;
+  }
+ } 
+
 /**
  * Remove a word from a string
  *
@@ -32,7 +44,6 @@ if (is_string($settings)) {$options = explode(",", $settings);$options = array_m
 $options = array_filter($options, 'is_not_null');
   } return $options;	 
 }	
-
 /**
 * Make a compactible with LiangLeePhpIde , used, array()
 */ 
