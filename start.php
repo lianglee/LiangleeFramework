@@ -8,13 +8,15 @@
  * @File Start.php
  */
   
-elgg_register_event_handler('init', 'system', 'LiangleeFramework_init');
+elgg_register_event_handler('init', 'system', 'LiangleeFramework_init'); 
+
 /*
  * Register Plugin Settings
  *
  * @access admin
  */
 function LiangleeFramework_init() {
+
 /*
  * Register Css
  *
@@ -47,6 +49,17 @@ if(is_file(elgg_get_plugins_path().$plugin.'/views/default/'.$plugin.'/'.$params
         }           
     }
 }
+
+function LiangLeeClasses(){
+$array = array('LiangLeeForm.php','LiangLeeSite.php','LiangLeeUrl.php','LiangLeeUser.php','LiangLeePage.php','LiangLeeHtml.php','LiangLeePath.php','LiangLeeFile.php');
+foreach($array as $class){
+require_once(elgg_get_plugins_path()."LiangleeFramework/classes/{$class}");
+   }
+}
+define('C_LEE_EXEC', 1);
+LiangLeeClasses();
+
+
 /*
  * Inlude a custom file
  *
@@ -93,23 +106,6 @@ function LiangLee_release($params){
 			}
 		}
 	return $LiangLee_release;
-}
-
-/*
- * Inlcuding a class
- *
- * @filename File Name
- */
-function LiangLee_Class($plugin, $params) {
-if(is_file(elgg_get_plugins_path().$plugin.'/classes/'.$params.'.php')){
-        include(elgg_get_plugins_path().$plugin.'/classes/'.$params.'.php');
-        } else {
-        if (elgg_is_admin_logged_in()){ 
-        register_error(elgg_echo('lianglee:class:bad'));
-        } else{
-        register_error(elgg_echo('lianglee:class:bad:code'));	
-       }            
-    }
 }
 /*
  * Adding js to pages 
