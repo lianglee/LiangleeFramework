@@ -26,7 +26,7 @@
 /**
 * Get loggedin user guid
 */
-    define('lee_loggedin_entity_guid', elgg_get_logged_in_user_entity()->guid);
+   define('lee_loggedin_entity_guid', elgg_get_logged_in_user_entity()->guid);
 /**
 * Get loggedin user name
 */
@@ -49,18 +49,6 @@
    define('lee_loggedin_user_guid', elgg_get_logged_in_user_guid());
 
 /***
- * Remove a word from a string
- *
- * @access system
- */
-function lee_framework_remove($data = '', $remove = ''){
-if(!empty($data) && !empty($remove)){
-$result =  str_replace($remove,'',$data);
-return $result;
-  }
- } 
-
-/***
  * Setup the LiangLeeFramework
  *
  * @access system
@@ -69,16 +57,13 @@ function LiangleeFramework_setup(){
 Lianglee_setup_libs();
 Lianglee_setup_load_libs();
 }
+
 /**
  * Setup the LiangLeeFramework core libs
  *
  * @access system
  */
 function Lianglee_setup_libs(){
-/**
-* Register Liang Lee Page Stetup Library
-*/
-elgg_register_library('lianglee:framework:pages', LiangLee_plugin_path('LiangleeFramework','lib')."lianglee.framework.pagesetup.php");
 /**
 * Register Liang Lee froms Library
 */
@@ -94,7 +79,7 @@ elgg_register_library('lianglee:framework:installdir', LiangLee_plugin_path('Lia
 elgg_register_library('lianglee:framework:connection', LiangLee_plugin_path('LiangleeFramework','lib')."lianglee.framework.connection.php");
 /**
 * Register Liang Lee Requested url Library
-*/   
+*/	  
 elgg_register_library('lianglee:framework:requrl', LiangLee_plugin_path('LiangleeFramework','lib')."lianglee.framework.requrl.php");
 /**
 * Register Liang Lee String Match Library
@@ -113,10 +98,6 @@ elgg_register_library('lianglee:framework:url', LiangLee_plugin_path('LiangleeFr
  * @access system
  */
 function Lianglee_setup_load_libs(){
-/**
-* Load Liang Lee Page Stetup Library
-*/
-      elgg_load_library('lianglee:framework:pages');
 /**
 * Load Liang Lee Url Library
 */	  
