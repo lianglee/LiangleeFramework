@@ -1,3 +1,10 @@
-LiangLeeFramework is part of the LiangLee plugins
+Liang Lee Framework ( latest version 1.1.6 )
+===============================================
 
-See Documentation for intergation.
+LiangLeeFramework is part of the LiangLee plugins.
+
+See Documentation for intergation
+
+المشروع
+========
+وهذا هو إطار الذي تم تطويره لمشروع دولة الإمارات العربية المتحدة
